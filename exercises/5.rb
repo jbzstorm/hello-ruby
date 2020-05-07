@@ -13,3 +13,13 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # Build the deck so that it doesn't just write the combinations out;
 # rather, create a new data structure that holds the cards so they 
 # can be shuffled, dealt, etc.
+deck = []
+
+for suit in suits
+    for rank in ranks 
+        puts "#{rank} of #{suit}"
+        deck = deck + ["#{rank} of #{suit}"]
+    end
+end
+
+puts deck.inspect
